@@ -1,0 +1,18 @@
+<h1>Listing Contacts</h1>
+ 
+<table border=1>
+  <tr>
+    <th>Name</th>
+    <th>Contact</th>
+	<th>Email</th>
+  </tr>
+ 
+  <% @contacts.each do |contact| %>
+    <tr>
+      <td><%= contact.name %></td>
+      <td><%= contact.contactNumber %></td>
+	  <td><%= contact.email %></td>
+    </tr>
+  <% end %>
+  <%= link_to "Create New Entry", new_contact_path%>
+</table>

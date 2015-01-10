@@ -1,0 +1,2 @@
+module ContactbookHelper
+end

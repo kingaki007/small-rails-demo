@@ -1,0 +1,19 @@
+<h1>Create New Contact!</h1>
+
+<%= form_for :contact, url: contacts_path do |f| %>
+	<p>
+		<%= f.label :name %>
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :contactNumber %>
+		<%= f.text_field :contactNumber %>
+	</p>
+	<p>
+		<%= f.label :email %>
+		<%= f.text_field :email %>
+	</p>
+	<p>
+		<%=f.submit%>
+	</p>
+<% end %>
